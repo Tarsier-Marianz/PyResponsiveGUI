@@ -3,7 +3,7 @@ from tkinter import ttk
 
 class ProgressDialog:
     def __init__(self):
-        self._root = Tk()  # set up the main window
+        self._root = Tk()
         self._root.title("Py File Scanner")
         self._root.resizable(width=False, height=False)
         self.progress = IntVar()
@@ -67,7 +67,8 @@ class ProgressDialog:
         pass
     
     def startGui(self):
-        # This final line tells Tk to enter its event loop, which is needed to make everything run.
+        # This final line tells Tk to enter its event loop,
+        #which is needed to make everything run.
         self._root.mainloop()
    
     def setMaximum(self, maximum):
